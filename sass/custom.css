@@ -119,6 +119,7 @@
   }
   .fondo {
     background-image: url(../imagenes/fondo-movil.png);
+    background-position: right;
   }
   .arribamenu {
     display: none;
