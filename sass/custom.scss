@@ -1,4 +1,14 @@
 /* nuevos */
+.hola{
+	display:flex;
+	margin:auto;
+	overflow-x:auto;
+	scrollbar-width: none;
+	padding: 20px;
+}
+
+
+
 .otroalto {
 	height: auto;
   }
@@ -96,6 +106,10 @@
 	.menusss {
 	  display: none;
 	}
+	.hola .product {
+		min-width: 33%;
+		transition: .5s;
+	}
   }
   
   @media only screen and (min-width: 100px) and (max-width: 900px) {
@@ -117,11 +131,14 @@
 	.otromasalto {
 	  height: auto;
 	}
+	.hola .product{
+		min-width:90% ;
+	}
   }
 
 $font-family-sans-serif:'Raleway', sans-serif;
 
-$primary: #F2B705;
+$primary: #fbaf7e;
 $secondary: #F7F1E7;
 $success: #202E59;
 
