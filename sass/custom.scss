@@ -1,20 +1,13 @@
-/* nuevos */
-.hola{
-	display:flex;
-	margin:auto;
-	overflow-x:auto;
-	scrollbar-width: none;
-	padding: 20px;
-}
-
-
-
 .otroalto {
 	height: auto;
   }
+
+  .colorsito{
+	background-color: #343a40;
+  }
   
   .fondo {
-	background-image: url("../imagenes/fondo.png");
+	background-image: url("../img/fondo.png");
 	background-size: cover;
 	background-repeat: no-repeat;
   }
@@ -36,7 +29,7 @@
   }
   
   .parallax {
-	background-image: url("../imagenes/vender_natura_banner_2.webp");
+	background-image: url("../img/vender_natura_banner_2.webp");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -44,7 +37,7 @@
   }
   
   .parallax2 {
-	background-image: url("../imagenes/fondo2.png");
+	background-image: url("../img/fondo2.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -98,18 +91,39 @@
   .otromasalto {
 	height: auto;
   }
+
+  .movi2 {
+	position: absolute;
+	right: -20%;
+	bottom: -20%;
+	z-index: 2;
+  }
   
   @media only screen and (min-width: 900px) and (max-width: 2000px) {
+	.movi {
+	  position: absolute;
+	  left: 0%;
+	  top: -10%;
+	  z-index: 1;
+	}
+	.sombreado {
+	  -webkit-box-shadow: 1px 1px 10px gray;
+	  box-shadow: 1px 1px 10px gray;
+	  z-index: 9;
+	  background-color: #fff;
+	  z-index: 9;
+	  background-color: #fff;
+	}
+	.movidito {
+	  position: absolute;
+	  top: 50px;
+	}
 	.desaparecedor {
-	  display: none;
-	}
-	.menusss {
-	  display: none;
-	}
-	.hola .product {
-		min-width: 33%;
-		transition: .5s;
-	}
+		display: none;
+	  }
+	  .menusss {
+		display: none;
+	  }
   }
   
   @media only screen and (min-width: 100px) and (max-width: 900px) {
@@ -117,8 +131,7 @@
 	  display: none;
 	}
 	.fondo {
-	  background-image: url(../imagenes/fondo-movil.png);
-	  background-position: right;
+	  background-image: url(../img/fondo-movil.png);
 	}
 	.arribamenu {
 	  display: none;
@@ -132,15 +145,11 @@
 	.otromasalto {
 	  height: auto;
 	}
-	.hola .product{
-		min-width:90% ;
-	}
   }
 
 $font-family-sans-serif:'Raleway', sans-serif;
 
-$primary: #fbaf7e;
-$secondary: #F7F1E7;
-$success: #202E59;
+$primary: #f37d1d;
+$secondary: #292c33;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
